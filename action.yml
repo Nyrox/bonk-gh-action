@@ -10,3 +10,4 @@ runs:
   using: "composite"
   steps:
     - run: curl -X POST -d "{\"token\":\"${{BONK_TOKEN}}\", \"run_id\":\"${{env.GITHUB_RUN_ID}}\" }" ${{BONK_PUBLIC_URL}}
+      shell: bash
