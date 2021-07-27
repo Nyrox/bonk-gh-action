@@ -9,5 +9,5 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: curl -H "Content-Type:application/json" -X POST -d "{\"token\":\"${{inputs.BONK_TOKEN}}\", \"run_id\":\"${{github.run_id}}\" }" ${{inputs.BONK_PUBLIC_URL}}
+    - run: curl -H "Content-Type:application/json" -X POST -d "{\"token\":\"${{inputs.BONK_TOKEN}}\", \"gh_run_id\":\"${{github.run_id}}\" }" ${{inputs.BONK_PUBLIC_URL}}/api/link-github-run
       shell: bash
