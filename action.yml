@@ -1,0 +1,12 @@
+name: "Bonk"
+description: "A Github Action for integrating with the Bonk CI system"
+inputs:
+  BONK_PUBLIC_URL:
+    required: true
+  BONK_TOKEN:
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - run: curl -X POST -d "{\"token\":\"${BONK_TOKEN}\", \"run_id\":\"${env.GITHUB_RUN_ID}\" }" ${BONK_PUBLIC_URL}
