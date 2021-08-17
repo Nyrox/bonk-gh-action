@@ -1,0 +1,13 @@
+{
+  "name": "bonk-gh-action",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Nyrox/bonk-gh-action.git",
+  "author": "Mark-Oliver Junge <root@nyrox.dev>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/github": "^5.0.0",
+    "node-fetch": "^2.6.1"
+  }
+}
